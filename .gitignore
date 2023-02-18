@@ -10,5 +10,9 @@ npm-debug.*
 *.orig.*
 web-build/
 
+/env.json
+
+/src/hasura/generated
+
 # macOS
 .DS_Store
