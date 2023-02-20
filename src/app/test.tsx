@@ -6,12 +6,12 @@ import { createClient } from "urql";
 
 const env = require("../../env.json");
 
-interface userData {
+interface usersData {
   user: {
     name: string
     id: string
   }
-}[]
+}
 
 console.log("⭕");
 const client = createClient({
@@ -48,13 +48,13 @@ console.log("⭕⭕⭕⭕", userQueryAtom);
 const TestComponent = () => {
   const [data] = useAtom(userQueryAtom);
 
-  const usersData: userData = data?.user
+  const usersData: usersData = data?.user
 
   console.log("⭕⭕⭕⭕⭕", usersData);
 
   return (
     <View className="h-full w-full flex-col items-center bg-red-700">
-      {usersData?.map((user) => {
+      {usersData?.map((user: { name: string, id: string }) => {
         return <Text className={'bg-yellow-600 text-zinc-100 w-20 h-20'}>{user?.name}</Text>
       })}
       <View className="flex-row bottom-0">

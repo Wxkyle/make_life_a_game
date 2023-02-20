@@ -1,7 +1,7 @@
 import { Provider } from "jotai";
 import { Suspense } from "react";
 import { View } from "react-native";
-import TestComponent from "./src/app/test";
+import HomeScreen from "./src/app/HomeScreen/HomeScreen";
 
 export default function App() {
   console.log("thing");
@@ -10,7 +10,7 @@ export default function App() {
     <Suspense>
       <Provider>
         <View className="flex-1 items-center justify-center bg-lime-700">
-          <TestComponent />
+          <HomeScreen />
         </View>
       </Provider>
     </Suspense>
