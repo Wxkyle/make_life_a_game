@@ -35,7 +35,7 @@ const NavBar = (props: NavBarProps) => {
                 <TouchableOpacity className={navBarTailwind}>
                 </TouchableOpacity>
                 <TouchableOpacity className={navBarTailwind + ' border-r-2 border-slate-400'}>
-                    <Text>Stuff</Text>
+                    <Text>Home</Text>
                 </TouchableOpacity>
                 <TouchableOpacity className={navBarTailwind}>
                     <Text>Settings</Text>

@@ -35,8 +35,6 @@ const HomeScreen = () => {
         }
     }
 
-
-
     return (
         <View className="h-full w-full flex-col items-center bg-green-200 relative">
             <View style={{ height: StatusBar.currentHeight + 4 }}></View>
